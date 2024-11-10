@@ -2,7 +2,6 @@ import { Router } from 'express';
 
 import AlunosController from '../app/controllers/AlunoController';
 import CursoController from '../app/controllers/CursoController';
-import LogicTestController from '../app/services/LogicTestService';
 // import CursoAlunoController  from '../app/controllers/CursoAlunoController';
 
 const routes = new Router();

@@ -38,8 +38,7 @@ class AtribuirCursoAlunoService {
         acc[curr.id_curso] = curr.curso.nome;
         return acc;
       }, {});
-      return cursos_aluno; /* vai retornar algo do genero { ID_DO_CURSO: NOME_DO_CURSO,
-                                                            ID_DO_CURSO: NOME_DO_CURSO } */
+      return cursos_aluno; /* vai retornar algo do genero { ID_DO_CURSO: NOME_DO_CURSO,  ID_DO_CURSO: NOME_DO_CURSO } */
     } catch (error) {
       return false;
     }
