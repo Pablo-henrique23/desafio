@@ -14,8 +14,8 @@ const LogicTestForm: React.FC = () => {
   const [results, setResults] = useState<number | null>(null);
 
   const submit = (): void => {
-    if (!n) {
-      toast('Preencha o campo necessário', {
+    if (!n || n <= 0) {
+      toast('Preencha o campo necessário com um número superior a 0', {
         position: toast.POSITION.BOTTOM_CENTER,
         type: 'error',
         autoClose: 2000,
