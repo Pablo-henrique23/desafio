@@ -11,7 +11,7 @@ class CursoAluno extends Model {
       {
         sequelize,
         timestamps: false,
-        tableName: 'curso_pessoa',
+        tableName: 'curso_pessoa', // A CLASSE É CURSOALUNO MAS NA TABELA É CURSO_PESSOA
       }
     );
     
