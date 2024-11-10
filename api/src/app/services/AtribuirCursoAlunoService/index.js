@@ -34,7 +34,7 @@ class AtribuirCursoAlunoService {
       if (!cursos) {
         return false;
       }
-      const cursos_aluno = cursos.reduce((acc, curr) => {
+      const cursos_aluno = cursos.reduce((acc, curr) => { // essas linhas vao fazer um array de hashmap virar um hashmap apenas
         acc[curr.id_curso] = curr.curso.nome;
         return acc;
       }, {});

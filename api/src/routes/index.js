@@ -2,6 +2,7 @@ import { Router } from 'express';
 
 import AlunosController from '../app/controllers/AlunoController';
 import CursoController from '../app/controllers/CursoController';
+import LogicTestController from '../app/services/LogicTestService';
 // import CursoAlunoController  from '../app/controllers/CursoAlunoController';
 
 const routes = new Router();
@@ -27,6 +28,5 @@ routes.delete('/cursos/:id', CursoController.delete);                // D
 // routes.get('/cursosalunos/:id', CursoAlunoController.read);          // R
 // routes.put('/cursosalunos/:id', CursoAlunoController.update);        // U
 // routes.delete('/cursosalunos/:id', CursoAlunoController.delete);     // D
-
 
 export default routes;
